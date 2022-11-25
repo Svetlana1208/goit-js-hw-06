@@ -1,6 +1,7 @@
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
+
 const boxes = document.querySelector("div#boxes");
 const field = document.querySelector("input");
 let amount;
@@ -32,3 +33,4 @@ destroyBtn.addEventListener('click', destroyBoxes);
 
 function destroyBoxes () {
 boxes.remove()}
+
