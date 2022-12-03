@@ -3,6 +3,11 @@ const nameLabel = document.querySelector('#name-output');
 
 input.addEventListener('input', onInputChange);
 
+
 function onInputChange(event) {
     nameLabel.textContent = event.currentTarget.value;
+
+    if (input.value.length === 0) {
+        nameLabel.textContent = "Anonymous";   
+    }
 }

@@ -12,10 +12,11 @@ field.addEventListener('change', event => {
 
 const createBtn = document.querySelector('button[data-create]');
 createBtn.addEventListener('click', createBoxes);
+let startSize = 30;
 
 function createBoxes () {
   const elements = [];
-  let startSize = 30;
+  
 
   for (let i = 0; i < amount; i += 1) {
     const el = document.createElement("div");
